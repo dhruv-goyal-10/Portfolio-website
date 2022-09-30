@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Great+Vibes&family=Passions+Conflict&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comic+Neue&family=Great+Vibes&family=Passions+Conflict&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +11,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.break-line {
+    background-color: black;
+    width: 80vw;
+    height: 1vh;
+    color: black;
+    margin: 10vh 0vh;
+}
 
 /* Navigation bar */
 
 nav {
-    
+
     display: flex;
     border-bottom: 2px white solid;
     height: 80px;
@@ -26,14 +34,15 @@ nav {
     flex-wrap: wrap;
 }
 
-nav .logo a:hover{
+nav .logo a:hover {
     text-decoration: none;
     color: red;
     font-family: 'Great Vibes', cursive;
     font-size: 35px;
     font-weight: 900;
 }
-nav .logo a{
+
+nav .logo a {
     text-decoration: none;
     color: white;
     font-family: 'Great Vibes', cursive;
@@ -144,7 +153,7 @@ input[type="checkbox"] {
 #intro {
 
     display: flex;
-    z-index:-1;
+    z-index: -1;
     flex-direction: column;
     background-image: url(images/4.jfif);
     background-attachment: fixed;
@@ -181,7 +190,7 @@ input[type="checkbox"] {
 
 /* About Section */
 
-#about{
+#about {
     height: 125vh;
     display: flex;
     flex-direction: column;
@@ -189,11 +198,14 @@ input[type="checkbox"] {
     align-items: center;
 
 }
-#about h1{
-    font-size: 4rem;
+
+#about h1 {
+    font-size: 6rem;
     text-align: center;
+    text-decoration: underline;
 }
-.about-image:hover{
+
+.about-image:hover {
     background-image: url(images/dp.jfif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -201,7 +213,8 @@ input[type="checkbox"] {
     width: 46vh;
     border-radius: 15%;
 }
-.about-image{
+
+.about-image {
     background-image: url(images/dp2.jfif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,14 +222,65 @@ input[type="checkbox"] {
     width: 46vh;
     border-radius: 15%;
 }
-#about p{
+
+#about p {
     text-align: center;
     font-family: 'Comic Neue', cursive;
     font-size: 1.5rem;
     line-height: 0.5 rem;
 }
-@media (max-width: 550px) {
-    #about{
+
+@media (max-width: 770px) {
+    #about {
         height: 185vh;
     }
+}
+
+/* Skills Section */
+
+#skills {
+    height: 150vh;
+    width: 100vw;
+    color: black;
+}
+
+#skills h1 {
+    font-size: 6rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#skills .skill-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item {
+    margin: 5vh 5vw;
+    padding: 10vh;
+    height: 40vh;
+    width: 40vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#cpp {
+    background-image: url(images/cpp.png);
+}
+
+#java {
+    margin-top: 5vh;
+    ;
+    background-image: url(images/java.png);
+}
+
+#html {
+    background-image: url(images/html.png);
+}
+
+#css {
+    background-image: url(images/css.png);
 }
