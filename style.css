@@ -141,7 +141,7 @@ input[type="checkbox"] {
     }
 }
 
-@media (max-width: 370px) {
+@media screen and(max-width: 370px) {
     nav {
         padding: 0px 10px;
     }
@@ -191,7 +191,7 @@ input[type="checkbox"] {
 /* About Section */
 
 #about {
-    height: 125vh;
+    height: 155vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,15 +231,16 @@ input[type="checkbox"] {
     line-height: 0.5 rem;
 }
 
-@media (max-width: 770px) {
+@media screen and (max-width: 770px) {
     #about {
-        height: 185vh;
+        height: 205vh;
     }   
 }
 
 /* Skills Section */
 
 #skills {
+    margin-top: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +290,11 @@ input[type="checkbox"] {
 #css {
     background-image: url(images/css.png);
 }
-
+@media screen and (max-width: 330px) {
+    #skills {
+        height: 200vh;
+    }   
+}
 /* Coding Handles Section */
 
 #coding {
