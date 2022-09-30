@@ -48,6 +48,7 @@ nav .logo a {
     font-family: 'Great Vibes', cursive;
     font-size: 35px;
     font-weight: 400;
+    transition: 0.5s;
 }
 
 nav ul {
@@ -222,6 +223,7 @@ input[type="checkbox"] {
     height: 50vh;
     width: 46vh;
     border-radius: 15%;
+    transition: 0.5s;
 }
 
 #about p {
@@ -330,26 +332,64 @@ input[type="checkbox"] {
 #codeforces{
     margin-top: 5vh ;
     background-image: url(images/codeforces2.jpeg);
+    transition: 1s;
 }
 #codeforces:hover{
     margin-top: 5vh ;
     background-image: url(images/codeforces.jpeg);
+    transform: scale(1.2);
 }
 #codechef{
     background-image: url(images/codechef2.png);
+    transition: 1s;
 }
 #codechef:hover{
     background-image: url(images/codechef.png);
+    transform: scale(1.2);
 }
 #hackerrank{
     background-image: url(images/hackerrank2.jpg);
+    transition: 1s;
 }
 #hackerrank:hover{
     background-image: url(images/hackerrank.jpg);
+    transform: scale(1.2);
 }
 #leetcode{
     background-image: url(images/leetcode2.png);
+    transition: 1s;
 }
 #leetcode:hover{
     background-image: url(images/leetcode.png);
+    transform: scale(1.2);
 }
+
+/* Contact Section */
+#contact {
+    background-color: black;
+    color: white;
+    height: 28vh;
+    width: 100vw;
+    margin-top: 10vh;
+}
+#contact p{
+    text-align: center;
+}
+.contactcontainer{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+   }
+   .contactlink{
+       padding: 10px;
+       font-size: 3rem;
+       transition: 1s;
+   }
+.contactlink a{
+    text-decoration: none;
+}
+   .contactlink:hover{
+       transform: scale(1.2);
+   }
