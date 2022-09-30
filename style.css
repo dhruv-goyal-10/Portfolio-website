@@ -200,6 +200,7 @@ input[type="checkbox"] {
 }
 
 #about h1 {
+    color: rgb(0, 0, 150);
     font-size: 6rem;
     text-align: center;
     text-decoration: underline;
@@ -233,18 +234,23 @@ input[type="checkbox"] {
 @media (max-width: 770px) {
     #about {
         height: 185vh;
-    }
+    }   
 }
 
 /* Skills Section */
 
 #skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 150vh;
     width: 100vw;
     color: black;
 }
 
 #skills h1 {
+    color: rgb(17, 112, 4);
     font-size: 6rem;
     text-align: center;
     text-decoration: underline;
@@ -273,7 +279,6 @@ input[type="checkbox"] {
 
 #java {
     margin-top: 5vh;
-    ;
     background-image: url(images/java.png);
 }
 
@@ -283,4 +288,63 @@ input[type="checkbox"] {
 
 #css {
     background-image: url(images/css.png);
+}
+
+/* Coding Handles Section */
+
+#coding {
+    height: 150vh;
+    width: 100vw;
+    color: black;
+    margin-top: 10vh;
+}
+.coding-container {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.coding-item {
+    margin: 5vh 5vw;
+    padding: 10vh;
+    height: 40vh;
+    width: 40vw;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#coding h1 {
+    color: rgb(127, 26, 131);
+    font-size: 6rem;
+    text-align: center;
+    text-decoration: underline;
+}
+#codeforces{
+    margin-top: 5vh ;
+    background-image: url(images/codeforces2.jpeg);
+}
+#codeforces:hover{
+    margin-top: 5vh ;
+    background-image: url(images/codeforces.jpeg);
+}
+#codechef{
+    background-image: url(images/codechef2.png);
+}
+#codechef:hover{
+    background-image: url(images/codechef.png);
+}
+#hackerrank{
+    background-image: url(images/hackerrank2.jpg);
+}
+#hackerrank:hover{
+    background-image: url(images/hackerrank.jpg);
+}
+#leetcode{
+    background-image: url(images/leetcode2.png);
+}
+#leetcode:hover{
+    background-image: url(images/leetcode.png);
 }
