@@ -1,6 +1,8 @@
+/* Utils */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Great+Vibes&family=Passions+Conflict&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comic+Neue&family=Great+Vibes&family=Passions+Conflict&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* Navigation bar */
 
 nav {
     
@@ -135,18 +139,19 @@ input[type="checkbox"] {
     z-index:-1;
     flex-direction: column;
     background-image: url(images/4.jfif);
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     width: 100%;
     padding: 0 30px;
     color: white;
     justify-content: center;
     align-items: center;
+    border-bottom: black 2px solid;
 }
 
 
@@ -164,4 +169,35 @@ input[type="checkbox"] {
 #intro-skills {
     font-size: 2.5em;
     font-weight: 600;
+}
+
+/* About Section */
+
+#about{
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#about h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.about-image img{
+    height: 50vh;
+    width: 46vh;
+    border-radius: 15%;
+}
+#about p{
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.5rem;
+    line-height: 0.5 rem;
+}
+@media (max-width: 550px) {
+    #about{
+        height: 185vh;
+    }
 }
