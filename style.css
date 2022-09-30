@@ -26,11 +26,19 @@ nav {
     flex-wrap: wrap;
 }
 
-nav .logo {
+nav .logo a:hover{
+    text-decoration: none;
+    color: red;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    font-weight: 900;
+}
+nav .logo a{
+    text-decoration: none;
     color: white;
     font-family: 'Great Vibes', cursive;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 nav ul {
@@ -185,7 +193,18 @@ input[type="checkbox"] {
     font-size: 4rem;
     text-align: center;
 }
-.about-image img{
+.about-image:hover{
+    background-image: url(images/dp.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 46vh;
+    border-radius: 15%;
+}
+.about-image{
+    background-image: url(images/dp2.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 50vh;
     width: 46vh;
     border-radius: 15%;
