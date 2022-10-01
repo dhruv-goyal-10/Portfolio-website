@@ -1,14 +1,14 @@
 /* Utils */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Great+Vibes&family=Passions+Conflict&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comic+Neue&family=Great+Vibes&family=Passions+Conflict&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Great+Vibes&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comic+Neue&family=Great+Vibes&family=Passions+Conflict&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .break-line {
@@ -22,7 +22,6 @@
 /* Navigation bar */
 
 nav {
-
     display: flex;
     border-bottom: 2px white solid;
     height: 80px;
@@ -37,7 +36,7 @@ nav {
 nav .logo a:hover {
     text-decoration: none;
     color: red;
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 35px;
     font-weight: 900;
 }
@@ -45,7 +44,7 @@ nav .logo a:hover {
 nav .logo a {
     text-decoration: none;
     color: white;
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 35px;
     font-weight: 400;
     transition: 0.5s;
@@ -148,11 +147,9 @@ input[type="checkbox"] {
     }
 }
 
-
 /* Intro Section */
 
 #intro {
-
     display: flex;
     z-index: -1;
     flex-direction: column;
@@ -171,7 +168,6 @@ input[type="checkbox"] {
     align-items: center;
     border-bottom: black 2px solid;
 }
-
 
 #intro-line {
     font-size: 2.2em;
@@ -192,12 +188,11 @@ input[type="checkbox"] {
 /* About Section */
 
 #about {
-    height: 155vh;
+    /* height: 155vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 #about h1 {
@@ -228,16 +223,16 @@ input[type="checkbox"] {
 
 #about p {
     text-align: center;
-    font-family: 'Comic Neue', cursive;
+    font-family: "Comic Neue", cursive;
     font-size: 1.5rem;
     line-height: 0.5 rem;
 }
 
-@media screen and (max-width: 770px) {
+/* @media screen and (max-width: 770px) {
     #about {
         height: 205vh;
-    }   
-}
+    }
+} */
 
 /* Skills Section */
 
@@ -247,7 +242,8 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 150vh;
+    flex-wrap: wrap;
+    /* height: 150vh; */
     width: 100vw;
     color: black;
 }
@@ -292,19 +288,22 @@ input[type="checkbox"] {
 #css {
     background-image: url(images/css.png);
 }
-@media screen and (max-width: 330px) {
+
+/* @media screen and (max-width: 330px) {
     #skills {
         height: 200vh;
-    }   
-}
+    }
+} */
+
 /* Coding Handles Section */
 
 #coding {
-    height: 150vh;
+    /* height: 150vh; */
     width: 100vw;
     color: black;
     margin-top: 10vh;
 }
+
 .coding-container {
     margin-top: 5vh;
     display: flex;
@@ -318,48 +317,57 @@ input[type="checkbox"] {
     margin: 5vh 5vw;
     padding: 10vh;
     height: 40vh;
-    width: 40vw;    
+    width: 40vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 #coding h1 {
     color: rgb(127, 26, 131);
     font-size: 6rem;
     text-align: center;
     text-decoration: underline;
 }
-#codeforces{
-    margin-top: 5vh ;
+
+#codeforces {
+    margin-top: 5vh;
     background-image: url(images/codeforces2.jpeg);
     transition: 1s;
 }
-#codeforces:hover{
-    margin-top: 5vh ;
+
+#codeforces:hover {
+    margin-top: 5vh;
     background-image: url(images/codeforces.jpeg);
     transform: scale(1.2);
 }
-#codechef{
+
+#codechef {
     background-image: url(images/codechef2.png);
     transition: 1s;
 }
-#codechef:hover{
+
+#codechef:hover {
     background-image: url(images/codechef.png);
     transform: scale(1.2);
 }
-#hackerrank{
+
+#hackerrank {
     background-image: url(images/hackerrank2.jpg);
     transition: 1s;
 }
-#hackerrank:hover{
+
+#hackerrank:hover {
     background-image: url(images/hackerrank.jpg);
     transform: scale(1.2);
 }
-#leetcode{
+
+#leetcode {
     background-image: url(images/leetcode2.png);
     transition: 1s;
 }
-#leetcode:hover{
+
+#leetcode:hover {
     background-image: url(images/leetcode.png);
     transform: scale(1.2);
 }
@@ -368,28 +376,33 @@ input[type="checkbox"] {
 #contact {
     background-color: black;
     color: white;
-    height: 28vh;
+    /* height: 28vh; */
     width: 100vw;
     margin-top: 10vh;
 }
-#contact p{
+
+#contact p {
     text-align: center;
 }
-.contactcontainer{
-    display: flex;   
+
+.contactcontainer {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
     flex-wrap: wrap;
-   }
-   .contactlink{
-       padding: 10px;
-       font-size: 3rem;
-       transition: 1s;
-   }
-.contactlink a{
+}
+
+.contactlink {
+    padding: 10px;
+    font-size: 3rem;
+    transition: 1s;
+}
+
+.contactlink a {
     text-decoration: none;
 }
-   .contactlink:hover{
-       transform: scale(1.2);
-   }
+
+.contactlink:hover {
+    transform: scale(1.2);
+}
